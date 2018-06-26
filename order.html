@@ -1,0 +1,127 @@
+<!doctype html>
+<!--SIT774 : Web Technologies and Development
+STUDENT ID : 215219447
+STUDENT NAME : Neha Nimran
+Assignment 2 -->
+
+<html>
+<head>
+  <title>Order</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script type="text/javascript" src="js/Validate.js"></script>
+</head>
+<body>
+
+<div class="container">
+
+<header id="logo1">
+    <img src="img/Logo.jpg">
+    <h1>Ranka Jewellers</h1>
+</header>
+
+<nav>
+    <ul class="top-nav" id="mytopnav">
+    <li><a class="active" href="index.html">Home</a></li>
+    <li><a class="active" href="Product.html">Products</a></li>
+    <li><a class="active" href="Service.html">Service</a></li>
+    <li><a class="active" href="order.html">Order</a></li>
+    <li><a class="active" href="survey.html" target="_blank">Poll</a></li>
+    <li><a class="active" href="Contact.html">Contact Us</a></li>
+    <li><a class="active" href="Query.html">Query</a></li>
+    <li><a class="active" href="admin.html" target="_blank">Administration</a></li>
+  </ul>
+</nav>
+
+<article>
+  <br><br><br><br>
+  <h3> Order Products or Service here</h3>
+<form name="ValidateForm" action="saveorder.php" method="post" onsubmit="return(validate())";>
+  <table>
+
+      <tr>
+       <td>
+        <b>First Name:*</b>
+       </td>
+       <td>
+        <input type="text" name="firstname" maxlength="100" size="50"><br>
+       </td>
+      </tr>
+
+      <tr>
+       <td>
+        <b>Last Name:*</b>
+       </td>
+       <td>
+        <input type="text" name="lastname" maxlength="100" size="50"><br>
+       </td>
+      </tr>
+
+      <tr>
+       <td>
+        <b>Product/Service Code:</b>
+       </td>
+       <td>
+<select name="ps">
+  <option  value="V35096" maxlength="100" size="50" >V35096</option>
+  <option  value="N32296" maxlength="100" size="50" >N32296</option>
+  <option  value="B54296" maxlength="100" size="50" >B54296</option>
+  <option  value="S34" maxlength="100" size="50" >S34</option>
+  <option  value="S24" maxlength="100" size="50" >S24</option>
+  <option  value="S67" maxlength="100" size="50" >S67</option>
+  <option  value="S65" maxlength="100" size="50" >S65</option>
+  <option  value="S46" maxlength="100" size="50" >S46</option>
+  <option  value="S99" maxlength="100" size="50" >S99</option>
+</select>
+       </td>
+      </tr>
+
+      <tr>
+       <td>
+        <b>Payment Method:</b>
+       </td>
+       <td>
+        <input type="radio" name="Paymentmethod" value="Master">Master<br>
+        <input type="radio" name="Paymentmethod" value="Visa">Visa<br>
+        <input type="radio" name="Paymentmethod" value="American Express">American Express<br>
+       </td>
+      </tr>
+
+      <tr>
+       <td>
+        <b>Payment Amount $:*</b>
+       </td>
+       <td>
+        <input type="text" name="Paymentamount" maxlength="100" size="50"><br>
+       </td>
+      </tr>
+
+
+      <tr>
+       <td>
+        <b>Delivery Address:</b>
+       </td>
+       <td rowspan="1">
+        <textarea  name="Paymentaddress" maxlength="100" cols="50" rows="10"></textarea><br>
+       </td>
+      </tr>
+
+      <tr>
+       <td id="button" colspan="5">
+      <input type="Submit" value="ORDER">
+      <tr>
+
+
+  </table>
+</form>
+
+
+
+</article>
+
+<footer>Deakin University. This web page has been developed as a student assignment for the unit SIT774: Web and Internet Programming. Therefore it is not part of the University's authorized web site.
+  DO NOT USE THE INFORMATION CONTAINED ON THIS WEB PAGE IN ANY WAY.</footer>
+
+</div>
+
+</body>
+</html>

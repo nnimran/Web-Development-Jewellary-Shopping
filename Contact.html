@@ -1,0 +1,98 @@
+<!doctype html>
+<!--SIT774 : Web Technologies and Development
+STUDENT ID : 215219447
+STUDENT NAME : Neha Nimran
+Assignment 2 -->
+
+<html>
+<head>
+  <title>Contact Us</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script type="text/javascript" src="js/Validate.js"></script>
+</head>
+<body>
+
+<div class="container">
+
+<header id="logo1">
+    <img src="img/Logo.jpg">
+    <h1>Ranka Jewellers</h1>
+</header>
+
+<nav>
+    <ul class="top-nav" id="mytopnav">
+    <li><a class="active" href="index.html">Home</a></li>
+    <li><a class="active" href="Product.html">Products</a></li>
+    <li><a class="active" href="Service.html">Service</a></li>
+    <li><a class="active" href="order.html">Order</a></li>
+    <li><a class="active" href="survey.html" target="_blank">Poll</a></li>
+    <li><a class="active" href="Contact.html">Contact Us</a></li>
+    <li><a class="active" href="Query.html">Query</a></li>
+    <li><a class="active" href="admin.html" target="_blank">Administration</a></li>
+  </ul>
+</nav>
+
+<article>
+<br><br><br>
+<h2>Contact Us </h2><hr>
+
+<h3>Office Address</h3>
+
+<h3>Karve Road Branch</h3>
+Karve Rd, Erandwana Gaothan,<br>
+Pune, 411004<br>
+India<br>
+(020) 25424747<br><hr>
+
+<h3>Chinchwad Branch</h3>
+4510/1, Mumbai Pune Road, Chinchwad,<br>
+PCMC- 411018, Maharashtra<br>
+India<br>
+(020) 25424747<br><hr>
+
+<h3>We will get back to you in 24 Hrs...</h3>
+<form name="ValidateForm" action="savecontact.php" method="post" onsubmit="return(validate());">
+<table>
+
+<tr><td><b>First Name:*</b></td>
+  <td><input type="text" name="firstname" maxlength="20" size="30"><br></td></tr>
+
+<tr><td><b>Last Name:*</b></td>
+ <td><input type="text" name="lastname" maxlength="20" size="30"><br></td></tr>
+
+<tr>
+ <td>
+  <b>Subject:</b>
+ </td>
+ <td>
+  <input type="text" name="subject" size="30"><br>
+ </td>
+</tr>
+
+<tr>
+ <td>
+   <b>Your Message:</b>
+ </td>
+ <td>
+  <textarea name="message" maxlength="10" cols="30" rows="5"></textarea><br>
+ </td>
+</tr>
+
+<tr>
+<td id="button" colspan="5">
+<input type="SUBMIT" value="SEND">
+</td>
+<tr>
+
+
+</table>
+</form>
+</article>
+
+<footer>Deakin University. This web page has been developed as a student assignment for the unit SIT774: Web and Internet Programming. Therefore it is not part of the University's authorized web site.
+  DO NOT USE THE INFORMATION CONTAINED ON THIS WEB PAGE IN ANY WAY.</footer>
+
+</div>
+
+</body>
+</html>

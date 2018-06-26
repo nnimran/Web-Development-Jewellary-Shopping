@@ -1,0 +1,126 @@
+<!doctype html>
+<!--SIT774 : Web Technologies and Development
+STUDENT ID : 215219447
+STUDENT NAME : Neha Nimran
+Assignment 2 -->
+
+<html>
+<head>
+  <title>Survey</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script type="text/javascript" src="js/Validate.js"></script>
+</head>
+<body>
+
+<div class="container">
+
+<header id="logo1">
+    <img src="img/Logo.jpg">
+    <h1>Ranka Jewellers</h1>
+</header>
+
+<nav>
+    <ul class="top-nav" id="mytopnav">
+    <li><a class="active" href="index.html">Home</a></li>
+    <li><a class="active" href="Product.html">Products</a></li>
+    <li><a class="active" href="Service.html">Service</a></li>
+    <li><a class="active" href="order.html">Order</a></li>
+    <li><a class="active" href="survey.html" target="_blank">Poll</a></li>
+    <li><a class="active" href="Contact.html">Contact Us</a></li>
+    <li><a class="active" href="Query.html">Query</a></li>
+    <li><a class="active" href="admin.html" target="_blank">Administration</a></li>
+  </ul>
+</nav>
+
+<article>
+
+<br><br><br><h3>Please complete the following survey</h3><br>
+
+
+
+<form name="ValidateForm" action="savesurvey.php" method="post" onsubmit="return(validate())";>
+<table>
+
+
+<tr><td><b>First Name:*</b>
+</td>
+ <td>
+  <input type="text" name="firstname" maxlength="20" size="30"><br>
+ </td>
+</tr>
+
+<tr>
+ <td>
+  <b>Last Name:*</b>
+ </td>
+ <td>
+  <input type="text" name="lastname" maxlength="20" size="30"><br>
+ </td>
+</tr>
+
+
+
+<tr>
+ <td>
+ <b>Are you satisfied with our service:</b>
+ </td>
+ <td>
+  <input type="radio" name="service" value="Yes" ><b>Yes</b>
+  <input type="radio" name="service" value="No"><b>No</b><br>
+ </td>
+</tr>
+
+
+<tr>
+ <td>
+ <b>On a scale of 1-5 , Please rate how helpful is this website:</b>
+ </td>
+ <td>
+   <select name="rating">
+  <option  value="1- Not Helpful" ><b>1- Not Helpful</option>
+  <option  value="2- Somewhat Helpful" ><b>2- Somewhat Helpful</option>
+  <option  value="3- Neutral" ><b>3- Neutral</option>
+  <option  value="4- Helpful" ><b>4- Helpful</option>
+  <option  value="4- Extremely Helpful" ><b>4- Extremely Helpful</option>
+</select>
+ </td>
+</tr>
+
+<tr>
+ <td>
+  <b>From where did you hear about this website:</b>
+ </td>
+ <td>
+<select name="source">
+<option value="Advertisement" >Advertisement</option>
+<option value="Email / Newsletter"  >Email / Newsletter</option>
+<option value="Facebook"  >Facebook</option>
+<option value="Family or Friend"  >Family or Friend</option>
+<option value="Magazine Article"  >Magazine Article</option>
+<option value="Twitter"  >Twitter</option>
+<option value="Youtube"  >Youtube</option>
+<option value="Others"  >Others</option>
+</select>
+ </td>
+</tr>
+
+
+<tr>
+<td id="button" colspan="5">
+<input type="Submit" value="SUBMIT">
+</td>
+<tr>
+
+
+</table>
+
+</form>
+</article>
+
+<footer>Deakin University. This web page has been developed as a student assignment for the unit SIT774: Web and Internet Programming. Therefore it is not part of the University's authorized web site.
+  DO NOT USE THE INFORMATION CONTAINED ON THIS WEB PAGE IN ANY WAY.</footer>
+
+</div>
+
+</body>
+</html>
